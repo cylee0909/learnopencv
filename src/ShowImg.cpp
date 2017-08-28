@@ -12,11 +12,13 @@ using namespace cv;
 //包含cv命名空间
 using namespace std;
 
-int main() {
+int showImg() {
 	// 【1】读入一张图片，载入图像
 	Mat srcImage = imread("img1.jpg");
 	// 【2】显示载入的图片
 	imshow("【原始图】", srcImage);
+
+//	Mat img = image(Rect(20,20,20,20));
 
 	//进行腐蚀操作
 	Mat element = getStructuringElement(MORPH_RECT, Size(15, 15));
