@@ -7,14 +7,19 @@
 
 extern int testVideo();
 extern int showImg();
-extern int showTrack();
+//extern int showTrack();
+#include "MouseDrawTest.h"
+
 int main() {
 	int result = 0;
 //	showImg();
 
 //	testVideo();
 
-	showTrack();
+//	showTrack();
+
+	MouseDrawTest mouse;
+	mouse.mouseDraw();
 	return result;
 }
 

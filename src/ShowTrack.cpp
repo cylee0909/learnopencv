@@ -14,11 +14,18 @@ using namespace std;
 const int maxVal = 100;
 int trackVal;
 Mat rawImg;
-Mat dstImg;
+Mat dstImg(100, 100, CV_8UC3);
 void onTrackChange(int val, void *) {
 	cout << "当前值是" << val << endl;
-	rotate(rawImg, dstImg, val / 10 % 2);
-	imshow(WINDOW_NAME, dstImg);
+//	rotate(rawImg, dstImg, val / 10 % 2);
+//	if (dstImg == NULL) {
+//		dstImg = rawImg;
+//	}
+	imshow(WINDOW_NAME, rawImg);
+}
+
+void onMouseChange(int event, int x, int y, int flags, void* userdata) {
+	cout << "Mouse event = " << event << " x = "<< x << " y = "<< y << endl;
 }
 
 int showTrack() {
@@ -28,6 +35,10 @@ int showTrack() {
 	String trackName("滑块");
 	createTrackbar(trackName, WINDOW_NAME, &trackVal, maxVal, onTrackChange);
 	onTrackChange(trackVal, 0);
+
+	// 设置鼠标监听
+	setMouseCallback(WINDOW_NAME, onMouseChange);
+
 	waitKey(0);
 	return 0;
 }
