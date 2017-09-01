@@ -5,10 +5,12 @@
  *      Author: cylee
  */
 
-extern int testVideo();
-extern int showImg();
+//extern int testVideo();
+//extern int showImg();
 //extern int showTrack();
-#include "MouseDrawTest.h"
+//#include "MouseDrawTest.h"
+//#include "TestCheckImg.h"
+#include "MixImg.h"
 
 int main() {
 	int result = 0;
@@ -18,8 +20,13 @@ int main() {
 
 //	showTrack();
 
-	MouseDrawTest mouse;
-	mouse.mouseDraw();
+//	MouseDrawTest mouse;
+//	mouse.mouseDraw();
+
+//	TestCheckImg().printTest();
+
+	MixImg().testMix();
+
 	return result;
 }
 

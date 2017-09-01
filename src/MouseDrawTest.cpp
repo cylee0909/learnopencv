@@ -47,7 +47,7 @@ void mouseChange(int event, int x, int y, int flags, void* userdata) {
 }
 
 void drawRect(Mat& img, Rect& rect) {
-	rectangle(img, rect.tl(), rect.br(), Scalar(rng.uniform(0,255), rng.uniform(0,255), rng.uniform(0,255)));
+	rectangle(img, rect.tl(), rect.br(), Scalar(255,255,255));
 }
 
 void MouseDrawTest::mouseDraw() {

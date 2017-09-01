@@ -41,7 +41,7 @@ set(SOURCE_FILES
         src/ShowImg.cpp
         src/ShowTrack.cpp
         src/TestVideo.cpp
-        img1.jpg)
+        src/TestCheckImg.cpp src/TestCheckImg.h src/MixImg.cpp src/MixImg.h)
 
 add_executable(LearnOpencv ${SOURCE_FILES})
 find_package(opencv REQUIRED)
