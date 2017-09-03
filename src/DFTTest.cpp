@@ -51,14 +51,14 @@ void DFTTest::testDft() {
     Mat q2 = magnituteImg(Rect(0,cy,cx, cy));
     Mat q3 = magnituteImg(Rect(cx,cy,cx, cy));
 
-//    Mat tmp;
-//    q0.copyTo(tmp);
-//    q3.copyTo(q0);
-//    tmp.copyTo(q3);
-//
-//    q1.copyTo(tmp);
-//    q2.copyTo(q1);
-//    tmp.copyTo(q2);
+    Mat tmp;
+    q0.copyTo(tmp);
+    q3.copyTo(q0);
+    tmp.copyTo(q3);
+
+    q1.copyTo(tmp);
+    q2.copyTo(q1);
+    tmp.copyTo(q2);
 
     normalize(magnituteImg, magnituteImg, 0, 1, NORM_MINMAX);
     cout<<"归一化后 mag  "<<magnituteImg<<endl;
