@@ -39,7 +39,6 @@ int showTrack() {
 	// 设置鼠标监听
 	setMouseCallback(WINDOW_NAME, onMouseChange);
 
-	waitKey(0);
 	return 0;
 }
 

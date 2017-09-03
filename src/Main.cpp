@@ -12,6 +12,8 @@
 //#include "TestCheckImg.h"
 #include "MixImg.h"
 #include "DFTTest.h"
+#include "TestBlur.h"
+#include <opencv2/opencv.hpp>  //头文件
 
 int main() {
 	int result = 0;
@@ -28,7 +30,10 @@ int main() {
 
 //	MixImg().testMix();
 
-	DFTTest().testDft();
+//	DFTTest().testDft();
+
+    TestBlur().apply();
+    cv::waitKey(0);
 	return result;
 }
 

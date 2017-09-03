@@ -26,7 +26,6 @@ int showImg() {
 	erode(srcImage, dstImage, element);
 	//显示效果图
 	imshow("【效果图】腐蚀操作", dstImage);
-	waitKey(0);
 	// 【3】等待任意按键按下
 	return 0;
 }

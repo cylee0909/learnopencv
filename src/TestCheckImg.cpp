@@ -27,7 +27,6 @@ void TestCheckImg::printTest() {
     double t2 = static_cast<double>(getTickCount());
     cout << "总计耗时 ： "<< (t2 - t1) / getTickFrequency() << endl;
     imshow("dstImg", dstImg);
-    cvWaitKey(0);
 }
 
 void TestCheckImg::colorReduce(cv::Mat &raw, cv::Mat &dst, int div) {

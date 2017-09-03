@@ -64,6 +64,5 @@ void MixImg::testMix() {
 //    testShow();
 //    testSplit();
     testChange();
-    cvWaitKey(0);
 }
 

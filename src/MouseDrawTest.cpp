@@ -68,8 +68,6 @@ void MouseDrawTest::mouseDraw() {
 		if (waitKey(10) == 27)
 			break; // esc退出
 	}
-
-	waitKey(0);
 }
 
 MouseDrawTest::~MouseDrawTest() {

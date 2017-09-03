@@ -63,5 +63,4 @@ void DFTTest::testDft() {
     normalize(magnituteImg, magnituteImg, 0, 1, NORM_MINMAX);
     cout<<"归一化后 mag  "<<magnituteImg<<endl;
     imshow("幅值图像", magnituteImg);
-    waitKey(0);
 }
