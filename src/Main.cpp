@@ -11,6 +11,7 @@
 //#include "MouseDrawTest.h"
 //#include "TestCheckImg.h"
 #include "MixImg.h"
+#include "DFTTest.h"
 
 int main() {
 	int result = 0;
@@ -25,8 +26,9 @@ int main() {
 
 //	TestCheckImg().printTest();
 
-	MixImg().testMix();
+//	MixImg().testMix();
 
+	DFTTest().testDft();
 	return result;
 }
 
