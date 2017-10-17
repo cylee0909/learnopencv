@@ -1,0 +1,3 @@
+/Users/cylee/eclipse-workspace/LearnOpencv/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/cylee/eclipse-workspace/LearnOpencv/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/cylee/eclipse-workspace/LearnOpencv/cmake-build-debug/CMakeFiles/LearnOpencv.dir

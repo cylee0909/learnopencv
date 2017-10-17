@@ -20,6 +20,13 @@ void TestBlur::apply() {
 //    blur(rawImg, out, Size(3, 3));
 
     // 高斯滤波
-    GaussianBlur(rawImg, out, Size(3, 3), 0, 0);
+//    GaussianBlur(rawImg, out, Size(13, 13), 0, 0);
+
+    // 非线性滤波算法
+    // 中值滤波
+//    medianBlur(rawImg, out, 13);
+
+    // 双边滤波
+    bilateralFilter(rawImg, out, 25, 25 * 2, 25 /2);
     imshow("result", out);
 }
